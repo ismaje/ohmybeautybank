@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bild a Website</title>
+
+    <link href="style/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* make the image fully responsive */
+        .corousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <!--link-->
+            <form class="form-inline" action="#">
+                <input class="form-control" type="text" placeholder="masukan pencarian">
+                <button class="btn btn-primary" type="submit">cari</button>
+            </form>
+            <div class="topnav">
+                <a href="login.html">Login</a>
+                <a href="tips.html">Tips</a>
+                <a href="catalog.html">Product</a>
+                <a href="aboutme.html">About me</a>
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Membuat Header -->
+<header>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0"class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+   
+    <!-- The slideshow 1 -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="image/ombb2.jpg" alt="ombb2" width="1350"
+                    height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="image/header.jpg" alt="header" width="1350"
+                height="500">
+        <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/header3.jpg" alt="header3" width="1350"
+                    height="500">
+    <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+   
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+       </a>
+      </div>
+    </header>
+
+    <!-- Content -->
+        <!-- Page Content -->
+        <div class="container">
+            <h1 class="display-4" style="padding-top: 0.3em;
+            padding-bottom: 0.3em"></h1>
+   <!-- Cards  TIPS-->
+        <div class="row">
+        <div class="col-sm-6">
+        <div class="card" style="margin-bottom: 1em">
+        <img class="card-img-top" src="image/banner2.jpg"
+        alt="Card image" style="width:100%">
+        <div class="card-body">
+        <h4 class="card-title"></h4>
+        <h4 class="card-title">Rekomendasi Moisturizer Lokal Isi Banyak dan Terjangkau, Bisa untuk Beberapa Bulan!</h4>
+        <p class="card-text">Rata-rata moisturizer dari label-label kecantikan lokal di Indonesia 
+            memiliki isi 10-30gr, paling banyaknya hanya 50gr. Dengan volume tersebut, 
+            moisturizer bisa habis dalam rentang 1-2 bulan. Secara personal, saya jadi penasaran: 
+            ada nggak sih, moisturizer lokal yang isinya banyak dan harganya juga terjangkau? Apalagi, 
+            moisturizer merupakan produk perawatan paling dasar untuk menjaga kesehatan skin barrier. 
+            Pastinya akan sering digunakan dan di-repurchase.</p>
+        <a href="https://editorial.femaledaily.com/blog/2022/07/19/rekomendasi-moisturizer-lokal-isi-banyak" class="btn btn-primary">Selengkapnya</a>
+         </div>
+        </div>
+    </div>
+        
+    <div class="col-sm-6">
+    <div class="card" style="margin-bottom: 1em">
+    <img class="card-img-top" src="image/banner3.jpg" alt="Card
+     image" style="width:100%" >
+    <div class="card-body">
+    <h4 class="card-title">Bicara Soal Penuaan Dini, Gimana Menghindari dan Mengatasinya?</h4>
+    <p class="card-text">Penuaan kulit bisa terjadi karena menurunnya metabolisme di tubuh
+        secara perlahan. Nah, hal ini menyebabkan beberapa hal terjadi, mulai dari tanda-tanda
+        penuaan yang muncul seperti kulit yang berkeriput, munculnya garis halus, dan lainnya.
+        Tapi, hal ini tentunya sangat biasa terjadi, karena memang sudah masuk ke stage penuaan.
+        Sedangkan, penuaan dini terjadi sebelum stage penuaan yang seharusnya.</p>
+        <a href="https://editorial.femaledaily.com/blog/2022/07/21/penuaan-dini-gimana-menghindari-dan-mengatasinya" class="btn btn-primary">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+   <!-- /.container -->
+
+   
+    </div> 
+  </section> 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> 
+<script>
+	function createSlick(){  
+
+	$(".slider").not('.slick-initialized').slick({
+		centerMode: true,
+	    autoplay: true,
+	    dots: true, 
+        arrows: true,
+  		slidesToShow: 3,
+	    responsive: [{ 
+	        breakpoint: 768,
+	        settings: {
+	            dots: false,
+	            arrows: false,
+	            infinite: true,
+	            slidesToShow: 1,
+	            slidesToScroll: 1
+	        } 
+	    }]
+	});	
+
+} 
+createSlick();
+
+//Will not throw error, even if called multiple times.
+$(window).on( 'resize', createSlick );
+
+</script>
+
+<!--Membuat Footer--><!--Footer-->
+   <footer class="py-5 bg-dark" style="margin-top: 2em">
+<div class="container">
+    <p class="m-0 text-center text-while">Copyright copy; 2022 - FP </p>
+</div>
+</footer>
+<!-- Booststrap core JavaScript -->
+    <script src="style/js/jquery-3.5.1.min.js"></script>
+    <script src="style/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

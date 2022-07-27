@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    }
+    body {
+    font-family:Roboto;
+    padding: 10px;
+    background: #eeddd3;
+    }
+    /* Header/Blog Title */
+    .header {
+    padding: 70px;
+    text-align: center;
+    background: #fff1e6;
+    font-size: 20px;
+    color: #292929;
+    padding: 20px;
+    }
+    .header h1 {
+    font-size: 35px;
+    }
+    /* Style the top navigation bar */
+    .topnav {
+    overflow: hidden;
+    background-color: #292929;
+    }
+    /* Style the topnav links */
+    .topnav a {
+    float: left;
+    display: block;
+    color: #f8f3f3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    /* Change color on hover */
+.topnav a:hover {
+    background-color: #000000;
+    color: #ffe606;
+    }
+    .kotak {
+    width: 100%;
+    padding: 10px;
+    border: 5px solid #060606;
+    border-style: dashed;
+    border-color: #EBA83A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color:#fff1e6;
+    ;
+    }
+    li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    }
+    /* Change the link color on hover */
+    li a:hover {
+    background-color: #000000;
+    color: #ffe606;
+    }
+    /* Create two unequal columns that floats next to each other
+    */
+    /* Left column */
+    .leftcolumn {
+    float: left;
+    width: 25%;
+    padding-right: 10px;
+    }
+    /*middlecolumn*/
+    .middlecolumn {
+    float: left;
+    width: 50%;
+    }
+    /* Right column */
+.rightcolumn {
+    float: right;
+    width: 25%;
+    background-color: #eeddd3;
+    padding-left: 20px;
+    }
+    /* Fake image */
+    .fakeimg {
+    padding: 20px;
+    }
+    /* Add a card effect for articles */
+    .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    /* Style Form Input*/
+    input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    }
+    /* Footer */
+    .footer {
+    padding: 5px;
+    text-align: center;
+    background: #292929;
+    margin-top: 10px;
+    color: black
+    }
+    /*image gallery*/
+    div.gallery {
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    }
+    div.gallery:hover {
+        border: 1px solid #7b00ff;
+        }
+        div.gallery img {
+        width: 100%;
+        height: auto;
+        }
+        div.desc {
+        padding: 20px;
+        text-align: center;
+        }
+        /* Responsive layout - when the screen is less than 800px
+        wide,
+        make the two columns stack on top of each other instead of
+        next
+        to each other */
+        @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn, .kotak {
+        width: 100%;
+        padding: 0;
+        }
+        }
+        /* Responsive layout - when the screen is less than 400px
+        wide,
+        make the navigation links stack on top of each other instead
+        of
+        next to each other */
+        @media screen and (max-width: 400px) {
+        .topnav a {
+        float: none;
+        width: 100%;
+        }
+
+        .popular {
+            width:20px;
+        }
+    }  

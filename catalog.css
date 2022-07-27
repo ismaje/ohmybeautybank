@@ -1,0 +1,161 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+body
+{
+    background-image: url('image/bg.webp');
+
+    ;
+}
+
+
+.header {
+padding: 70px;
+text-align: left;
+background: rgb(245, 245, 245);
+font-size: 10px;
+ } 
+
+ .header {
+    padding: 5px;
+    text-align: right;
+    background: #eeddd3;
+    }
+    .header h1 {
+    font-size: 10px;
+    }
+    /* Style the top navigation bar */
+    .topnav {
+    overflow: hidden;
+    background-color: #292929;
+    }
+    /* Style the topnav links */
+    .topnav a {
+    float: right;
+    display: block;
+    color: #fcf9f9;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    }
+    /* Change color on hover */
+    .topnav a:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 217, 0);
+        }
+        .kotak {
+        width: 100%;
+        padding: 10px;
+        border: 5px solid gray;
+        border-style: dotted;
+        border-color: orange;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: right;
+        }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        }
+        li a {
+        display: block;
+        color: rgb(0, 0, 0);
+        padding: 8px 16px;
+        text-decoration: none;
+        }
+        /* Change the link color on hover */
+        li a:hover {
+        background-color: #c29500;
+        color: rgb(0, 0, 0);
+        }
+
+.badan
+{
+    width: 880px;
+    margin: 35px auto;
+    background-color: white;
+    padding: 20px;
+    overflow: hidden;
+}
+  
+.badan h2
+{
+    color: crimson;
+    border-bottom: 1px solid gainsboro;
+    margin: 5px;
+    margin-bottom: 13px;
+}
+  
+.list-produk
+{
+    border: 1px solid gainsboro;
+    padding: 10px;
+    float: left;
+    width: 200px;
+    margin: 5px;
+}
+  
+.list-produk:hover
+{
+    transition-duration: 700ms;
+    box-shadow: 5px 5px gainsboro;
+}
+  
+.list-produk img
+{
+    width: 100%;
+    height: 175px;
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.list-produk h4, .list-produk h5
+{
+    color: crimson;
+    text-align: center;
+    margin-bottom: 5px;
+}
+  
+.tombol
+{
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 7px;
+    display: block;
+    float: left;
+    width: 45%;
+    margin: 4px;
+    text-align: center;
+    color: white;
+}
+  
+.tombol:hover
+{
+    background-color: black;
+    transition-duration: 700ms;
+}
+  
+.tombol-detail
+{
+    background-color: green;
+}
+  
+.tombol-beli
+{
+    background-color: crimson;
+}
+.footer
+{
+    padding: 20px;
+    text-align: center;
+    background: #292929;
+    margin-top: 20px;
+}
